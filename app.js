@@ -4,22 +4,22 @@ const amigos = [];
 // Función para agregar un amigo a la lista
 function agregarAmigo() {
   const input = document.getElementById("amigo");
-  const nombre = input.value.trim();
+  const nombre = input.value.trim(); // Elimina espacios en blanco al inicio y al final
 
   if (nombre === "") {
-    alert("Por favor, escribe un nombre válido.");
+    mostrarMensaje("Por favor, escribe un nombre válido.");
     return;
   }
 
-  amigos.push(nombre); 
-  actualizarLista(); 
-  input.value = "";
+  amigos.push(nombre); // Agrega el nombre a la lista
+  actualizarLista(); // Actualiza la lista en pantalla
+  input.value = ""; // Limpia el campo de entrada
 }
 
 // Función para actualizar la lista visual en el HTML
 function actualizarLista() {
   const lista = document.getElementById("listaAmigos");
-  lista.innerHTML = "";
+  lista.innerHTML = ""; // Limpia la lista antes de actualizarla
 
   amigos.forEach((amigo, index) => {
     const listItem = document.createElement("li");
@@ -32,7 +32,7 @@ function actualizarLista() {
 // Función para sortear un amigo al azar
 function sortearAmigo() {
   if (amigos.length === 0) {
-    alert("La lista está vacía. Por favor, añade al menos un nombre.");
+    mostrarMensaje("La lista está vacía. Por favor, añade al menos un nombre.");
     return;
   }
 
@@ -42,3 +42,16 @@ function sortearAmigo() {
   const resultado = document.getElementById("resultado");
   resultado.innerHTML = `<li class="result-item">¡El amigo secreto es: ${amigoSorteado}!</li>`;
 }
+
+// Mensaje de alerta por si algún campo no se cumple
+function mostrarMensaje(mensaje) {
+    const mensajeDiv = document.getElementById("mensaje");
+    mensajeDiv.textContent = mensaje; // Coloca el texto del mensaje
+    mensajeDiv.style.display = "block"; // Asegúrate de que sea visible
+  
+    // Oculta el mensaje automáticamente después de 3 segundos
+    setTimeout(() => {
+      mensajeDiv.style.display = "none";
+    }, 3000);
+  }
+  
