@@ -26,7 +26,6 @@ Este es un proyecto web interactivo para realizar sorteos de amigo secreto. Los 
 
 <img width="1439" alt="image" src="https://github.com/user-attachments/assets/9d677950-b72a-4c7e-9d3b-b905f34ee353" />
 
-
 ## Tecnologías Utilizadas
 
 - **HTML5**: Para la estructura del contenido.

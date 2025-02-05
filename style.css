@@ -64,10 +64,10 @@ body {
     font-size: 60px;
     font-weight: 900;
     text-shadow: 
-    0px 1px 0px #ffffff, /* Sombra roja (hacia abajo y derecha) */
-    -2px -2px 0px #ffffff, /* Sombra azul (hacia arriba y izquierda) */
-    2px -2px 0px rgb(255, 255, 255), /* Sombra verde (hacia arriba y derecha) */
-    -2px 2px 0px #ffffff; /* Sombra morada (hacia abajo y izquierda) */
+    0px 1px 0px #ffffff, 
+    -2px -2px 0px #ffffff, 
+    2px -2px 0px rgb(255, 255, 255), 
+    -2px 2px 0px #ffffff; 
     color: var(--color-text);
 }
 
@@ -105,8 +105,6 @@ body {
     width: 300px;
     justify-content: center;
 }
-
-/* Estilos de entrada de texto */
 
 
 /* Estilos de botón añadir */
@@ -147,7 +145,7 @@ ul {
 }
 
 .name-list {
-    text-transform: uppercase; /* Transforma todo el texto a mayúsculas visualmente */
+    text-transform: uppercase; 
   }  
 
 /* Botón de sortear título */
