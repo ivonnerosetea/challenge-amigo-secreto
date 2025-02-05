@@ -24,6 +24,7 @@ Este es un proyecto web interactivo para realizar sorteos de amigo secreto. Los 
 
 ## Captura de Pantalla
 
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/9d677950-b72a-4c7e-9d3b-b905f34ee353" />
 
 
 ## Tecnologías Utilizadas
